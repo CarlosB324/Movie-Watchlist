@@ -93,8 +93,8 @@ function emptyWatchlistRender() {
     watchlistInfoSection.innerHTML = `
         <div class="watchlist-start">
             <h3>Your watchlist is looking a little empty...</h3>
-            <button id="add-movies">
-                <i class="fa-solid fa-circle-plus"></i> Let’s add some movies!
+            <button class="add-movies" id="add-movies">
+                <i class="fa-solid fa-circle-plus"></i> Let's add some movies!
             </button>
         </div>`
 }

@@ -28,15 +28,12 @@ html, body {
     border: none;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 .watchlist a {
     color: #FFFFFF;
     text-decoration: none; 
-}
-
-.watchlist:focus {
-    outline: none;
 }
 
 /* Starting Screen */
@@ -54,6 +51,10 @@ html, body {
 
 .watchlist-start h3 {
     color: #787878;
+}
+
+.add-movies {
+    cursor: pointer;
 }
 
 /* Movie Info Section */
