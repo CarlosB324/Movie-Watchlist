@@ -22,7 +22,7 @@ function handleClick(e) {
 
 /* Getting Movie Info Section */
 function movieSearch() {
-    fetch(`https://www.omdbapi.com/?apikey=c6e04130&s=${searchBar.value}`)
+    fetch(`https://www.omdbapi.com/?s=${searchBar.value}&apikey=c6e04130`)
         .then(res => res.json())
         .then(data => {
             movieArray.splice(0, movieArray.length)
@@ -52,7 +52,7 @@ function getMovieInfo(e) {
     let movies = e.Search
     
     for (movie of movies) {
-        fetch(`https://www.omdbapi.com/?apikey=c6e04130&i=${movie.imdbID}`)
+        fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=c6e04130`)
             .then(res => res.json())
             .then(movieData => {
                 
