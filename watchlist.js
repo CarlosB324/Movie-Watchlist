@@ -23,8 +23,6 @@ function handleClick(e) {
     e.preventDefault()
     if (e.target.id === "to-movie-search") {
         window.location="index.html"
-    } else if (e.target.id === "add-movies") {
-        window.location="index.html"
     } else if (e.target.dataset.watchlist) {
         removeBtn(e.target.dataset.watchlist)
     }
@@ -93,8 +91,8 @@ function emptyWatchlistRender() {
     watchlistInfoSection.innerHTML = `
         <div class="watchlist-start">
             <h3>Your watchlist is looking a little empty...</h3>
-            <button class="add-movies" id="add-movies">
+            <a class="add-movies" id="add-movies">
                 <i class="fa-solid fa-circle-plus"></i> Let's add some movies!
-            </button>
+            </a>
         </div>`
 }

@@ -15,9 +15,7 @@ function handleClick(e) {
         searchBar.value = ""
     } else if (e.target.dataset.watchlist) {
         getMovieIndex(e.target.dataset.watchlist)
-    } else if (e.target.id === "to-watchlist") {
-        window.location="watchlist.html"
-    }
+    } 
 }
 
 /* Getting Movie Info Section */
